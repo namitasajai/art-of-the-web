@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Mynerve&family=Patrick+Hand+SC&display=swap');
+
+body {
+    position: absolute; 
+    top: 0px; 
+    left: 0; 
+    padding: 60px; 
+    height: 100%; 
+    width: 100%; 
+    margin-left: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(226, 230, 251);
+    background-image: url(https://i.pinimg.com/originals/58/03/c3/5803c3b39fa87b4462b03950edc990bc.gif);
+    background-size: 100vw 100vh;
+    background-position: 0px 0px; 
+    overflow: hidden; 
+    
+}
+.mainbox {
+    color:rgb(45, 47, 59);
+    margin: auto; 
+    font-family: 'Mynerve';
+    font-size: 60px; 
+    height: 80%; 
+    width: 70%;
+    min-width: 1000px;  
+    padding: 30px;
+    text-align: center;  
+    border-radius: 30px; 
+    font-size: 50px;
+    z-index: 0; 
+}
+#text {
+    text-align: left;
+    margin-left: 0px; 
+    position: absolute;
+    font-family: 'Mynerve'; 
+    font-size: 20px; 
+    transform: scale(0.7);
+
+}
+#normaltext {
+    background-color: transparent; 
+    border-radius: 40px; 
+    border: 2px solid transparent; 
+    padding: 20px; 
+    margin-top: 40px; 
+    min-width: 700px; 
+}
+
+#keyboard {
+    position: absolute; 
+    transform: scale(0.70);
+    margin: auto; 
+    margin-top:120px;
+}
+
+img {
+    position: absolute; 
+}
+
+#keys > img:active {
+    transform: scale(0.96); 
+}
+
+#space:active {
+    transform: scale(0.98); 
+}
