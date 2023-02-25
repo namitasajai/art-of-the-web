@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    background-image: url("");
+    background-color: #e47d29;
+    color: white; 
+    font-size: 30px;
+    overflow: hidden; /* prevent scrollbars */
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+}
+
+
+#background-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-text__item {
+    flex: 0 0 auto;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: 1ch;
+    padding: 10px; /* add 10px padding to each occurrence of "Congrats" */
+}
+
+.background-text__item span {
+    padding: 0 10px; /* remove the padding from the surrounding text */
+}
+
+.background-text__overlay {
+    position: absolute;
+    z-index: 2;
+    color: #5b1818;
+    pointer-events: none;
+    padding: 10px;
+    background-position: -10px -10px;
+}

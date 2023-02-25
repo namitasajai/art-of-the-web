@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Mynerve&family=Patrick+Hand+SC&display=swap');
+
+body {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 60px;
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(226, 230, 251);
+    background-image: url(https://i.pinimg.com/originals/fb/1c/07/fb1c07f47ee18267661e70f038bbdad3.gif);
+    background-size: 100vw 100vh;
+    background-position: 0px 0px;
+    overflow: hidden;
+
+}
+
+.mainbox {
+    color: rgb(45, 47, 59);
+    margin: auto;
+    font-family: 'Mynerve';
+    font-size: 60px;
+    height: 80%;
+    width: 70%;
+    min-width: 1000px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 50px;
+    z-index: 0;
+}
+
+#text {
+    text-align: left;
+    margin-left: 90px;
+    position: absolute;
+    font-family: 'Mynerve';
+    font-size: 20px;
+    transform: scale(0.7);
+
+}
+
+#normaltext {
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    padding: 20px;
+    margin-top: 40px;
+    min-width: 700px;
+}
+
+#keyboard {
+    position: absolute;
+    transform: scale(0.70);
+    margin-left: 55px;
+    margin-top: 120px;
+}
+
+img {
+    position: absolute;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    margin-top: -50px;
+    margin-left: -20px;
+}
+
+.window {
+    top: 0;
+    left: 0;
+
+}
+
+#Yes, #No {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+
+#exit:active,
+#fullscreen:active,
+#minimize:active {
+    transform: scale(0.96);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(149, 141, 155, 0.326);
+}
+
+#Yes:active,
+#No:active {
+    transform: scale(0.96);
+
+}
+
+
+a:active {
+    cursor: default;
+    transform: scale(0.96);
+}
+
+.inputfield {
+    display: block;
+}
+
+#U,
+#S,
+#E,
+#R,
+#N,
+#A,
+#M,
+#E1 {
+    display: block;
+}
+
+#time {
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    color: rgb(255, 104, 58);
+}
+
+button>img:active {
+    cursor: default;
+    transform: scale(0.96);
+}
+
+#pizza {
+    display: none;
+}

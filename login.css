@@ -16,6 +16,21 @@ body {
     overflow: hidden; 
     
 }
+#authentication {
+    position: absolute; 
+    top: 0px; 
+    left: 0; 
+    padding: 60px; 
+    height: 100%; 
+    width: 100%; 
+    margin-left: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(226, 230, 251);
+    background-image: url(https://i.pinimg.com/originals/a4/08/44/a408447916925b307cf1c9714b0988ae.gif);
+    background-size: 100vw 100vh;
+    background-position: 0px 0px; 
+    overflow: hidden; 
+}
 .mainbox {
     color:rgb(45, 47, 59);
     margin: auto; 
@@ -32,7 +47,7 @@ body {
 }
 #text {
     text-align: left;
-    margin-left: 0px; 
+    margin-left: 90px; 
     position: absolute;
     font-family: 'Mynerve'; 
     font-size: 20px; 
@@ -51,7 +66,7 @@ body {
 #keyboard {
     position: absolute; 
     transform: scale(0.70);
-    margin: auto; 
+    margin-left: 55px; 
     margin-top:120px;
 }
 
@@ -65,4 +80,29 @@ img {
 
 #space:active {
     transform: scale(0.98); 
+}
+
+a:active {
+    cursor: default; 
+    transform: scale(0.96); 
+}
+
+.inputfield {
+    display: block; 
+}
+#U, #S, #E, #R, #N, #A, #M, #E1 {
+    display: block; 
+}
+#time {
+    font-family:'Roboto Condensed', Helvetica, Arial, sans-serif; 
+    font-size: 60px; 
+    color:rgb(255, 104, 58); 
+}
+
+button > img:active {
+    cursor: default; 
+    transform: scale(0.96); 
+}
+#pizza {
+    display: none; 
 }

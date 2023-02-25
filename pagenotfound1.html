@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="pagenotfound.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+</head>
+
+<body>
+    <h1>404 Page 
+        <span onclick="notClick()">Not</span> Found
+        <span>
+            <img id="cross" src="keyboard/cross.png" alt="strike out"
+                style="position: absolute; transform: scale(.08); top: 0; left: 0; margin-top: 90px; margin-left: 230px; display: none; ">
+        </span>
+    </h1>
+    <p>Sorry, the page you are looking for could not be found.</p>
+    <p>Please try again later, or <a href="/">return to the homepage</a>.</p>
+
+    <div>
+        <img onclick="onClick()" src="keyboard/tulip.png" alt="tulip"
+            style="position: fixed; bottom:0; left: 0; margin-left: -200px; margin-bottom: -329px; transform: scale(.2);"
+            </div>
+</body>
+<script>
+    function onClick() {
+        document.getElementById('cross').style.display = "block";
+    }
+    function notClick(){
+        document.getElementById('cross').style.display = "block";
+        window.location.href = "savechanges.html";
+    }
+
+</script>
+
+</html>

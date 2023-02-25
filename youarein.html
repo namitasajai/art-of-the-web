@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="youarein.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>You're In!</title>
 </head>
+
 <body>
-    
+    <div id="background-text"></div>
+    <div class="background-text__overlay"></div>
+
+    <script>
+		const text = "YOU'REIN";
+		const numRepeatsX = Math.ceil(window.innerWidth / (text.length * 10));
+		const numRepeatsY = Math.ceil(window.innerHeight / 20); // adjust 20 for desired vertical spacing
+		const backgroundText = Array(numRepeatsX * numRepeatsY + 1).join(`<span>${text}</span> `);
+		const backgroundTextItems = Array(numRepeatsY).fill(`<div class="background-text__item">${backgroundText}</div>`);
+		document.getElementById("background-text").innerHTML = backgroundTextItems.join("");
+
+        const overlayText = "YOU'REIN";
+		const overlayNumRepeatsX = Math.ceil(window.innerWidth / (overlayText.length * 10));
+		const overlayNumRepeatsY = Math.ceil(window.innerHeight / 20); // adjust 20 for desired vertical spacing
+		const overlayBackgroundText = Array(overlayNumRepeatsX * overlayNumRepeatsY + 1).join(`<span>${overlayText}</span> `);
+		const overlayBackgroundTextItems = Array(overlayNumRepeatsY).fill(`<div class="background-text__item">${overlayBackgroundText}</div>`);
+		const overlayContainer = document.createElement("div");
+		overlayContainer.classList.add("background-text__overlay");
+		overlayContainer.innerHTML = overlayBackgroundTextItems.join("");
+        overlayContainer.style.top = "0px";
+        overlayContainer.style.left = "0px";
+        document.body.appendChild(overlayContainer);
+	</script>
+
 </body>
+
 </html>

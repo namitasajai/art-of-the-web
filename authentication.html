@@ -6,38 +6,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>123</title>
 </head>
 
-<body>
+<body id="authentication">
     <span id="time">01:00</span>
     <div class="mainbox">
-        <div id="text">
-            <img src="keyboard/Input.png">
-            <img id="U" src="keyboard/UInput.png" style="top: 0; left:0; margin-left: 40px; margin-top: 37px;">
-            <img class="inputfield" id="S" src="keyboard/SInput.png"
+        <div id="text" onclick="onClick1()">
+            <img src="keyboard/Input.png" >
+            <img id="P" src="keyboard/PasswordP.png" style="top: 0; left:0; margin-left: 40px; margin-top: 37px;">
+            <img class="password" id="password" src="keyboard/Password.png"
                 style="top: 0; left:0; margin-left: 67px; margin-top: 37px;">
-            <img class="inputfield" id="E" src="keyboard/EInput.png"
-                style="top: 0; left:0; margin-left: 94px; margin-top: 37px;">
-            <img class="inputfield" id="R" src="keyboard/RInput.png"
-                style="top: 0; left:0; margin-left: 121px; margin-top: 37px;">
-            <img class="inputfield" id="N" src="keyboard/NInput.png"
-                style="top: 0; left:0; margin-left: 148px; margin-top: 37px;">
-            <img class="inputfield" id="A" src="keyboard/AInput.png"
-                style="top: 0; left:0; margin-left: 175px; margin-top: 37px;">
-            <img class="inputfield" id="M" src="keyboard/MInput.png"
-                style="top: 0; left:0; margin-left: 202px; margin-top: 37px;">
-            <img class="inputfield" id="E1" src="keyboard/EInput1.png"
-                style="top: 0; left:0; margin-left: 229px; margin-top: 37px;">
-            <img class="inputfield" id="E2" src="keyboard/success.png"
-                style="top: 0; left:0; margin-left: 990px; margin-top: 33px; display: none;">
+            <img class="inputfield" id="I" src="keyboard/PasswordI.png"
+                style="top: 0; left:0; margin-left: 67px; margin-top: 37px; display: none;">
+            <img class="inputfield" id="Z" src="keyboard/PasswordZ.png"
+                style="top: 0; left:0; margin-left: 94px; margin-top: 37px; display: none;">
+            <img class="inputfield" id="Z1" src="keyboard/PasswordZ1.png"
+                style="top: 0; left:0; margin-left: 121px; margin-top: 37px; display: none;">
+            <img class="inputfield" id="A" src="keyboard/PasswordA.png"
+                style="top: 0; left:0; margin-left: 148px; margin-top: 37px; display: none;">
+            <img class="inputfield" id="1" src="keyboard/Password1.png"
+                style="top: 0; left:0; margin-left: 175px; margin-top: 37px; display: none;">
+            <img class="inputfield" id="2" src="keyboard/Password2.png"
+                style="top: 0; left:0; margin-left: 202px; margin-top: 39px; display: none;">
+            <img class="inputfield" id="3" src="keyboard/Password3.png"
+                style="top: 0; left:0; margin-left: 229px; margin-top: 32px; display: none;">
         </div>
         <div id="keyboard">
             <img src="keyboard/keyboard.png" style="top: 0; left: 0;">
             <div id="keys">
-                <img src="keyboard/1.png" alt="1" style="top: 0; left: 0; margin-left: 95px; margin-top: 135px;">
-                <img src="keyboard/2.png" alt="2" style="top: 0; left: 0; margin-left: 165px; margin-top: 137px;">
-                <img src="keyboard/3.png" alt="3" style="top: 0; left: 0; margin-left: 236px; margin-top: 140px;">
+                <button onclick="handleClick('1')">
+                    <img src="keyboard/1.png" alt="1" style="top: 0; left: 0; margin-left: 95px; margin-top: 135px;">
+                </button>
+                <button onclick="handleClick('2')">
+                    <img src="keyboard/2.png" alt="2" style="top: 0; left: 0; margin-left: 165px; margin-top: 137px;">
+                </button>
+                <button onclick="handleClick('3')">
+                    <img src="keyboard/3.png" alt="3" style="top: 0; left: 0; margin-left: 236px; margin-top: 140px;">
+                </button>
                 <img src="keyboard/4.png" alt="4" style="top: 0; left: 0; margin-left: 308px; margin-top: 140px;">
                 <img src="keyboard/5.png" alt="5" style="top: 0; left: 0; margin-left: 379px; margin-top: 138px;">
                 <img src="keyboard/6.png" alt="6" style="top: 0; left: 0; margin-left: 451px; margin-top: 139px;">
@@ -49,29 +55,25 @@
                 <img src="keyboard/+.png" alt="+" style="top: 0; left: 0; margin-left: 888px; margin-top: 142px;">
                 <img src="keyboard/Q.png" alt="Q" style="top: 0; left: 0; margin-left: 131px; margin-top: 213px;">
                 <img src="keyboard/W.png" alt="W" style="top: 0; left: 0; margin-left: 201px; margin-top: 214px;">
-                <button onclick="handleClick('E')">
-                    <img src="keyboard/E.png" alt="E" style="top: 0; left: 0; margin-left: 272px; margin-top: 213px;">
-                </button>
-                <button onclick="handleClick('R')">
-                    <img src="keyboard/R.png" alt="R" style="top: 0; left: 0; margin-left: 340px; margin-top: 211px;">
-                </button>
+                <img src="keyboard/E.png" alt="E" style="top: 0; left: 0; margin-left: 272px; margin-top: 213px;">
+                <img src="keyboard/R.png" alt="R" style="top: 0; left: 0; margin-left: 340px; margin-top: 211px;">
                 <img src="keyboard/T.png" alt="T" style="top: 0; left: 0; margin-left: 415px; margin-top: 211px;">
                 <img src="keyboard/Y.png" alt="Y" style="top: 0; left: 0; margin-left: 483px; margin-top: 211px;">
-                <button onclick="handleClick('U')">
-                    <img src="keyboard/U.png" alt="U" style="top: 0; left: 0; margin-left: 557px; margin-top: 209px;">
+                <img src="keyboard/U.png" alt="U" style="top: 0; left: 0; margin-left: 557px; margin-top: 209px;">
+                <button onclick="handleClick('I')">
+                    <img src="keyboard/I.png" alt="I" style="top: 0; left: 0; margin-left: 624px; margin-top: 214px;">
                 </button>
-                <img src="keyboard/I.png" alt="I" style="top: 0; left: 0; margin-left: 624px; margin-top: 214px;">
                 <img src="keyboard/O.png" alt="O" style="top: 0; left: 0; margin-left: 691px; margin-top: 217px;">
-                <img src="keyboard/P.png" alt="P" style="top: 0; left: 0; margin-left: 766px; margin-top: 217px;">
+                <button onclick="handleClick('P')">
+                    <img src="keyboard/P.png" alt="P" style="top: 0; left: 0; margin-left: 766px; margin-top: 217px;">
+                </button>
                 <img src="keyboard/{.png" alt="{" style="top: 0; left: 0; margin-left: 836px; margin-top: 217px;">
                 <img src="keyboard/}.png" alt="}" style="top: 0; left: 0; margin-left: 907px; margin-top: 213px;">
                 <img src="keyboard/_-3.png" alt="\" style="top: 0; left: 0; margin-left: 984px; margin-top: 214px;">
                 <button onclick="handleClick('A')">
                     <img src="keyboard/A.png" alt="A" style="top: 0; left: 0; margin-left: 147px; margin-top: 282px;">
                 </button>
-                <button onclick="handleClick('S')">
-                    <img src="keyboard/S.png" alt="S" style="top: 0; left: 0; margin-left: 220px; margin-top: 287px;">
-                </button>
+                <img src="keyboard/S.png" alt="S" style="top: 0; left: 0; margin-left: 220px; margin-top: 287px;">
                 <img src="keyboard/D.png" alt="D" style="top: 0; left: 0; margin-left: 292px; margin-top: 287px;">
                 <img src="keyboard/F.png" alt="F" style="top: 0; left: 0; margin-left: 365px; margin-top: 288px;">
                 <img src="keyboard/G.png" alt="G" style="top: 0; left: 0; margin-left: 438px; margin-top: 286px;">
@@ -81,17 +83,15 @@
                 <img src="keyboard/L.png" alt="L" style="top: 0; left: 0; margin-left: 725px; margin-top: 291px;">
                 <img src="keyboard/_-2.png" alt=":" style="top: 0; left: 0; margin-left: 794px; margin-top: 291px;">
                 <img src="keyboard/'.png" alt="quote" style="top: 0; left: 0; margin-left: 863px; margin-top: 289px;">
-                <img src="keyboard/Z.png" alt="Z" style="top: 0; left: 0; margin-left: 180px; margin-top: 354px;">
+                <button onclick="handleClick('Z')">
+                    <img src="keyboard/Z.png" alt="Z" style="top: 0; left: 0; margin-left: 180px; margin-top: 354px;">
+                </button>
                 <img src="keyboard/X.png" alt="X" style="top: 0; left: 0; margin-left: 249px; margin-top: 358px;">
                 <img src="keyboard/C.png" alt="C" style="top: 0; left: 0; margin-left: 325px; margin-top: 359px;">
                 <img src="keyboard/V.png" alt="V" style="top: 0; left: 0; margin-left: 400px; margin-top: 359px;">
                 <img src="keyboard/B.png" alt="B" style="top: 0; left: 0; margin-left: 469px; margin-top: 359px;">
-                <button onclick="handleClick('N')">
-                    <img src="keyboard/N.png" alt="N" style="top: 0; left: 0; margin-left: 539px; margin-top: 359px;">
-                </button>
-                <button onclick="handleClick('M')">
-                    <img src="keyboard/M.png" alt="M" style="top: 0; left: 0; margin-left: 606px; margin-top: 359px;">
-                </button>
+                <img src="keyboard/N.png" alt="N" style="top: 0; left: 0; margin-left: 539px; margin-top: 359px;">
+                <img src="keyboard/M.png" alt="M" style="top: 0; left: 0; margin-left: 606px; margin-top: 359px;">
                 <img src="keyboard/,.png" alt="," style="top: 0; left: 0; margin-left: 678px; margin-top: 359px;">
                 <img src="keyboard/_-1.png" alt="." style="top: 0; left: 0; margin-left: 748px; margin-top: 361px;">
                 <img src="keyboard/_.png" alt="/" style="top: 0; left: 0; margin-left: 819px; margin-top: 359px;">
@@ -108,32 +108,34 @@
 
             </div>
         </div>
+        <div id="pizza">
+            <img src="keyboard/Pizza.png" alt="password"
+                style="position: absolute; top: 0; left: 0; margin-left: -35%; margin-top: -10%; transform: scale(.1); ">
+        </div>
     </div>
+
+    
 
     <script>
 
-        const desiredString = "USERNAME";
+        const desiredString = "PIZZA123";
         var tempString = "";
+
+        function onClick1() {
+            document.getElementById('pizza').style.display = "block"; 
+        }
 
         function onClick(nextLetter) {
             var a = document.getElementById(nextLetter);
-            var x = document.getElementsByClassName("inputfield");
-            if (nextLetter === "U") {
-                document.getElementById("S").style.display = "none";
-                document.getElementById("E").style.display = "none";
-                document.getElementById("R").style.display = "none";
-                document.getElementById("N").style.display = "none";
-                document.getElementById("A").style.display = "none";
-                document.getElementById("M").style.display = "none";
-                document.getElementById("E1").style.display = "none";
-                a.style.display = "block";
+            if (nextLetter === "P") {
+                document.getElementById('pizza').style.display = "block";
+                document.getElementById("password").style.display = "none";
             }
-            if (nextLetter === "E") {
+            if (nextLetter === "Z") {
                 if (a.style.display === "none") {
                     a.style.display = "block";
                 } else {
-                    document.getElementById("E1").style.display = "block";
-                    document.getElementById("E2").style.display = "block";
+                    document.getElementById("Z1").style.display = "block";
                 }
             }
             a.style.display = "block";
@@ -149,7 +151,7 @@
                 console.log(tempString);
             }
             if (nextLetter === "return" && tempString === desiredString) {
-                window.location.href = "authentication.html";
+                window.location.href = "savechanges.html";
 
             }
 

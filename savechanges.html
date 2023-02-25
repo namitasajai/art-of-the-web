@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="savewindow.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save changes</title>
+</head>
+
+<body>
+    <span id="time">01:00</span>
+    <div class="mainbox">
+        <div class="container">
+            <img id="window" src="keyboard/Window.png" alt="drawing of mac window" 
+            style="position: absolute; left: 0; top: 0"> 
+            <a href="pagenotfound1.html">
+                <img id="exit" src="keyboard/Red.png" alt="exit button of window"
+                style="position: absolute; left: 0; top: 0; margin-left: 30px; margin-top: 30px; ">
+            </a>
+            
+            <img class="window" id="minimize" src="keyboard/Yellow.png" alt="minimize button of window" 
+            style="position: absolute; left: 0; top: 0; margin-left: 60px; margin-top: 30px; ">
+            <img class="window" id="fullscreen" src="keyboard/Green.png" alt="fullscreen button of window"
+            style="position: absolute; left: 0; top: 0; margin-left: 90px; margin-top: 29px; ">
+            <a href="youarein.html">
+                <img class="window" id="Yes" src="keyboard/Yes.png" alt="yes button"
+                style="position: absolute; left: 0; top: 0; margin-left: 140px; margin-top: 300px">
+            </a>
+            <a href="pagenotfound.html">
+                <img class="window" id="No" src="keyboard/No.png" alt="no button"
+            style="position: absolute; left: 0; top: 0; margin-left: 340px; margin-top: 300px">
+            </a>
+    
+        </div>
+        
+    </div>
+
+    <script>
+
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10)
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    window.location.href = "pagenotfound.html";
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var oneMinute = 60 * 1,
+                display = document.querySelector('#time');
+            startTimer(oneMinute, display);
+        };
+
+    </script>
+
+
+
+</body>
+
+</html>
