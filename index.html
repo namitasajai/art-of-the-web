@@ -14,27 +14,21 @@
         DO YOU WISH TO PLAY?
 
         <div class="buttons">
-            <a href="login.html" style="text-decoration: none;">
+            <a id="Yes" href="login.html" style="text-decoration: none;">
                 <img src="keyboard/Yes.png" style="transform: scale(0.8);">
             </a>
-            <a id="myBtn" style="text-decoration: none;">
+            <a id="No" style="text-decoration: none;">
                 <img src="keyboard/No.png" style="transform: scale(0.8);">
             </a>
-
-            <!-- <a href=" /username.html" style="text-decoration: none""> 
-                <button>
-                Yes
-                </button>
-            </a> -->
         </div>
     </div>
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
-            <div style="position: absolute">
+            <div style="position:absolute">
                 <img src="keyboard/modal.png" alt="modal">
-                <img class="close" src="keyboard/Red.png" alt="close button"
+                <img id="exit" class="close" src="keyboard/Red.png" alt="close button"
                     style="position: absolute; top: 0; left:0; margin-top: 30px; margin-left: 35px">
                 <a href="https://chanyagracet.github.io/section_one_final/index.html">
                     <img src="keyboard/cloudarrow.png"
@@ -50,13 +44,15 @@
     var modal = document.getElementById("myModal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    var btn = document.getElementById("No");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks on the button, open the modal 
     btn.onclick = function () {
+        btn.style.cursor = "pointer"; 
+        btn.style.transform = "scale(0.96)"; 
         modal.style.display = "block";
     }
 
